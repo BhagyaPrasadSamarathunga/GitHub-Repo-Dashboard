@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Github</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="search-form">
+        <form class="column"></form>
+            <label for="repoName" class="repo-name-label">
+                Enter Github Repository Name
+            </label>
+            <!-- repo-inputs -->
+            <div class="row repo-name-input">
+                <input type="text" id="repoName" placeholder="Github repository name"
+                    autoComplete="off"  value="chamika90/Photo-Gallery"/>
+                <button class="submit-btn" id='btnRepos' onclick="getRepos()">
+                    Submit
+                </button>
+            </div>
+            <p class='error'>Repo doesn't exist</p>
+        </form>
+    </div>
+    <div class = 'divResult'></div>
+    <script src='./app.js'></script>
+</body>
+</html>

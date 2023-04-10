@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e0f9fd;
+}
+
+/* -------- home page --------- */
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-form { 
+    flex: 1;
+    padding: 30px 10px;
+    width: 900px;
+    margin: 0 auto;
+    position: sticky;
+}
+
+.repo-name-label {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+}
+
+.repo-name-input {
+    width: 100%;
+    margin: 0 auto;
+    outline: none;
+}
+
+.repo-name-input input {
+    padding: 8px;
+    font-size: 16px;
+    flex-basis: 84%;
+    outline: none;
+    border: none;
+    color: #666;
+    text-indent: 10px;
+    transition: all .3s ease;
+    box-shadow: 1px 1px 10px 0 rgba(46, 61, 73, .25);
+    background: #fff;
+    border-radius: 50px;
+}
+
+.repo-name-input input::placeholder {
+    opacity: .7;
+}
+
+.repo-name-input input:focus {
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+.repo-name-input .input-light {
+    background: #fff;
+}
+
+.repo-name-input button {
+    margin-left: 15px;
+    flex-basis: 20%;
+}
+
+.submit-btn {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-weight: 600;
+    position: relative;
+    background: none;
+    color: #ef5f63;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #ef5f63;
+    padding: 0.5em 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    max-width: 100px;
+    line-height: 1.2;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+}
+.submit-btn a {
+    color: #ef5f63;
+}
+
+#info-card {
+    color: #084468;
+    background-color: rgb(143, 169, 245);
+    width: 900px;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+#info-card>div {
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+#info-card .user-col {
+    height: 80%;
+}
+
+.info-card-content {
+    box-sizing: border-box;
+    width: 400px;
+    text-align: center;
+    padding: 30px 5px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 25px 0 rgba(46, 61, 73, .14);
+    word-wrap: break-word;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-size: cover;
+    background-blend-mode: screen;
+    color: #fff;
+}
+
+.info-card-content {
+    padding: 25px 5px;
+}
+
+.text-black {
+    color: #000;
+}
+
+.user-col {
+    flex-direction: column;
+}
+
+.user-avatar-container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-avatar {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 1px solid #0AE0DF;
+    padding: 4px;
+}
+
+.user-avatar:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    color: linear-gradient(rgba(57, 67, 90, .9));
+}
+
+.user-info .author {
+    margin-top: 5px;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.user-info .repo-name {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.user-info .stars {
+    margin: 0 0 10px 0;
+}
+
+.user-row {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.font-size-medium {
+    font-size: 20px;
+}
+
+.font-size-regular {
+    font-size: 16px;
+    letter-spacing: .5px;
+    font-weight: bold;
+}
+
+.git-info ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-btn a {
+    color: #ef5f63;
+    text-decoration: none;
+}
+
+.profile-btn {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-weight: 600;
+    position: relative;
+    background: none;
+    color: #ef5f63;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #ef5f63;
+    padding: 0.5em 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    max-width: 100px;
+    line-height: 1.2;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    margin-top: 50px;
+}
+
+.error {
+    color: #ff1616;
+    font-size: 20px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.search-form .error {
+    width: 900px;
+    margin-top: 10px;
+}
+
+/*--------------- Loading animation styles ------------------*/
+
+.loader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.loader svg {
+    height: 5.5rem;
+    width: 5.5rem;
+    fill: #F59A83;
+    transform-origin: 44% 50%;
+    animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .row {
+        flex-direction: column;
+    }
+    .repo-name-input input {
+        margin-bottom: 15px;
+    }
+    .repo-name-input .submit-btn {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .search-form {
+        width: auto;
+    }
+    #info-card {
+        width: auto;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #info-card>div {
+        padding: 0;
+    }
+
+    #info-card .profile-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #info-card {
+        width: auto;
+        margin: 10px 0 0 0;
+    }
+    #info-card .user-col {
+        margin: 0;
+    }
+    body {
+        height: 100vh;
+    }
+
+}
+
+.error {
+    display: none;
+}
